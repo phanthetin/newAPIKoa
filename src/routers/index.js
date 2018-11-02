@@ -1,6 +1,10 @@
 
 import compose from 'koa-compose';
 import demo from './demo';
+import Sequelize from 'sequelize';
+
+
+
 
 
 //List router
