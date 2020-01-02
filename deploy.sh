@@ -1,4 +1,4 @@
-HOST_DEPLOY='root@54.179.188.75.com'
+HOST_DEPLOY='root@54.179.188.75'
 ENV_PATH='.env.pro'
 BUILD_PATH='dist/'
 TAGET_PATH='/home/new-project/app'
@@ -13,9 +13,6 @@ then
     cp package.json dist/package.json;
     cp_package=$?
 
-    cp -r src/template dist/template;
-    cp_template=$?
-
     cp docker-compose.yml dist/docker-compose.yml;
     cp_docker_compose=$?
 
@@ -25,7 +22,7 @@ then
     cp run-container.sh dist/run-container.sh;
     cp_run_container=$?
 
-    if [ "$cp_package" -eq "0" ] && [ "$cp_template" -eq "0" ] && [ "$cp_docker_compose" -eq "0" ] && [ "$cp_dockerfile" -eq "0" ] && [ "$cp_run_container" -eq "0" ];
+    if [ "$cp_package" -eq "0" ] && [ "$cp_docker_compose" -eq "0" ] && [ "$cp_dockerfile" -eq "0" ] && [ "$cp_run_container" -eq "0" ];
     then
         echo ">>> Copy files succesfully!"
         echo "> Start deploy to F1!"

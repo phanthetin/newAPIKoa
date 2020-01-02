@@ -1,7 +1,7 @@
 version: '2.1'
 
 services:
-  nexus-hnc-api-crm:
+  new-project:
     image: new-project
     build: .
     container_name: new-project
@@ -13,7 +13,7 @@ services:
     - /home/new-project/logs:/logs
     networks:
       F1NETWORK2:
-        ipv4_address: 172.20.0.52
+        ipv4_address: 172.20.0.5
 
 networks:
   default:
