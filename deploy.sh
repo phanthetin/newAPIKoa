@@ -1,8 +1,8 @@
-HOST_DEPLOY='root@lubrytics.com'
-ENV_PATH='.env.f1'
+HOST_DEPLOY='root@54.179.188.75.com'
+ENV_PATH='.env.pro'
 BUILD_PATH='dist/'
-TAGET_PATH='/home/backend/nexus-api/app'
-CONTAINER_NAME='nexus-hnc-api-crm'
+TAGET_PATH='/home/new-project/app'
+CONTAINER_NAME='new-project'
 
 npm run build;
 echo ">>> Build done $CONTAINER_NAME"

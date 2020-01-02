@@ -2,15 +2,15 @@ version: '2.1'
 
 services:
   nexus-hnc-api-crm:
-    image: nexus-hnc-api-crm
+    image: new-project
     build: .
-    container_name: nexus-hnc-api-crm
+    container_name: new-project
     environment: 
       NODE_ENV: production
     volumes:
-    - /home/backend/nexus-api/app:/app
-    - /home/backend/nexus-api/keys:/keys
-    - /home/backend/nexus-api/logs:/logs
+    - /home/new-project/app:/app
+    - /home/new-project/keys:/keys
+    - /home/new-project/logs:/logs
     networks:
       F1NETWORK2:
         ipv4_address: 172.20.0.52
