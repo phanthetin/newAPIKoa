@@ -1,4 +1,10 @@
+dist/
 node_modules/
-yarn.lock
+logs/
 package-lock.json
-.vscode
+yarn.lock
+.docker.env
+*.log
+.env
+docker-compose.yml
+deploy.sh
