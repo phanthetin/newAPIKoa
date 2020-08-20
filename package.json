@@ -22,7 +22,7 @@
   "dependencies": {
     "@babel/runtime": "^7.3.4",
     "async-busboy": "^0.7.0",
-    "bcrypt": "^3.0.4",
+    "bcrypt": "^5.0.0",
     "bcrypt-nodejs": "0.0.3",
     "bee-queue": "^1.2.2",
     "convert-excel-to-json": "^1.6.1",
